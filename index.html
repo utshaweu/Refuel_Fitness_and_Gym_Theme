@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Refuel Gym Template</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fonts-2/flaticon.css">
@@ -9,10 +10,12 @@
     <link rel="stylesheet" href="fonts/flaticon.css">
     <link rel="stylesheet" href="css/imagehover.min.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery.mb.YTPlayer.min.css">
     <link rel="stylesheet" href="css/venobox.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     
     <!--Navbar Part Start -->
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -25,22 +28,22 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#service">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#price">Pricing</a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="#">Team</a>
+                <a class="nav-link" href="#team">Team</a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
+                <a class="nav-link" href="#gallery">Gallery</a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>   
             </ul>
             <div class="social-icon">
@@ -59,8 +62,8 @@
             <div class="row">
                 <div class="col-lg-12 m-auto">
                     <div class="banner_text text-center">
-                        <h1>Working <span>Harder!</span></h1>
-                        <p>Fitness Reveals Pleasure get in shape now!</p>
+                        <h1 class="wow rollIn" data-wow-duration="1.5s" data-wow-delay=".5s">Working <span>Harder!</span></h1>
+                        <p class="wow slideInDown" data-wow-duration="1.5s" data-wow-delay=".5s">Fitness Reveals Pleasure get in shape now!</p>
                     </div>
                 </div>
             </div>
@@ -74,14 +77,14 @@
         <div class="container">
             <div class="row mx-0">
                <div class="col-lg-4 p-0">
-                   <div class="banner_form_text text-center mr1">
+                   <div class="banner_form_text text-center mr1 wow slideInLeft" data-wow-duration="4s" data-wow-delay=".8s">
                        <i class="flaticon-money"></i>
                        <h3>Best <span>Prices</span></h3>
                        <p>Num nulla sem,vulputate eu sem eu,iaculis tincidunt risus. Vestibulum tortor nibh,dapibus non nulla acer.</p>
                    </div>
                </div>
                <div class="col-lg-4 p-0">
-                   <div class="banner_forms text-center mr2">
+                   <div class="banner_forms text-center mr2 wow pulse" data-wow-duration="4s" data-wow-delay=".8s">
                       <h3>Get <span>free</span> quote</h3>
                       <div class="form">
                           <form action="index.html" method="post">
@@ -97,7 +100,7 @@
                    </div>
                </div> 
                <div class="col-lg-4 p-0">
-                   <div class="banner_form_text text-center mr3">
+                   <div class="banner_form_text text-center mr3 wow slideInRight" data-wow-duration="4s" data-wow-delay=".8s">
                        <i class="flaticon-call"></i>
                        <h3>24/7 <span>Support</span></h3>
                        <p>Num nulla sem,vulputate eu sem eu,iaculis tincidunt risus. Vestibulum tortor nibh,dapibus non nulla acer.</p>
@@ -113,40 +116,42 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
-                    <div class="img">
+                    <div class="img wow slideInLeft" data-wow-duration="2s" data-wow-delay=".4s">
                         <img src="images/about.png" alt="" class="img-fluid w-100">
                         <a class="venobox" data-autoplay="true" data-vbtype="video" href="http://youtu.be/watch?v=2Mve7xeDyW8"><i class="fas fa-play"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <div class="head mr4">
-                        <span>01</span>
-                        <p>Clever line here</p>
-                        <h2>About us</h2>
-                    </div>
-                    <div class="about mr4 mr5">
-                        <p class="about-texts"><span>01.</span>Low prices</p>
-                        <p class="about-text">We keep our prices low and make sure they are simple and easy to understand.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, dolore. </p>
-                    </div>
-                    <div class="about mr4">
-                        <p class="about-texts"><span>02.</span>High quality gyms</p>
-                        <p class="about-text">Our gyms are designed and maintained to the highest standards,with state-of-the-art equipment.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, dolore. </p>
-                    </div>
-                    <div class="about mr4">
-                        <p class="about-texts"><span>03.</span>Open all day,every day</p>
-                        <p class="about-text">Whenever you're ready to train,most gyms are open and ready to welcom you,365 days a year,24 hours a day.Lorem ipsum dolor sit amet. </p>
-                    </div>
+                   <div class="wow slideInRight"  data-wow-duration="2s" data-wow-delay=".4s">
+                        <div class="head mr4">
+                            <span>01</span>
+                            <p>Clever line here</p>
+                            <h2>About us</h2>
+                        </div>
+                        <div class="about mr4 mr5">
+                            <p class="about-texts"><span>01.</span>Low prices</p>
+                            <p class="about-text">We keep our prices low and make sure they are simple and easy to understand.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, dolore. </p>
+                        </div>
+                        <div class="about mr4">
+                            <p class="about-texts"><span>02.</span>High quality gyms</p>
+                            <p class="about-text">Our gyms are designed and maintained to the highest standards,with state-of-the-art equipment.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, dolore. </p>
+                        </div>
+                        <div class="about mr4">
+                            <p class="about-texts"><span>03.</span>Open all day,every day</p>
+                            <p class="about-text">Whenever you're ready to train,most gyms are open and ready to welcom you,365 days a year,24 hours a day.Lorem ipsum dolor sit amet. </p>
+                        </div>
+                   </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-7">
-                    <div class="think mr6">
+                    <div class="think mr6 wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".4s">
                         <p><span class="one">Train</span> different</p>
                         <h4>Train for <span class="two">free</span> today!</h4>
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <div class="get mr6">
+                    <div class="get mr6 wow shake" data-wow-duration="1.2s" data-wow-delay=".5s">
                         <button type="button" class="btn btn-success">Get a free pass</button>
                     </div>
                 </div>
@@ -157,6 +162,8 @@
     
     <!--Service Part Start -->
     <section id="service">
+       <div id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/QG1pChyMQ5w',containment:'#service',autoPlay:true, mute:true, showControls:false, startAt:20, opacity:1}">My video</div>
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -169,42 +176,42 @@
             </div>
             <div class="row mx-0">
                 <div class="col-lg-4 p-0">
-                    <div class="service-item heads text-center mr7">
+                    <div class="service-item heads text-center mr7 wow slideInLeft" data-wow-duration="1s" data-wow-delay=".4s">
                        <i class="flaticon-gym"></i>
                        <h5>Fitness <span>class</span></h5>
                        <p>Num nulla sem,vulputate eu sem eu,iaculis tincidunt risus. Vestibulum tortor nibh,dapibus non nulla acer.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 p-0">
-                    <div class="service-item heads text-center mr7">
+                    <div class="service-item heads text-center mr7 wow bounceInDown" data-wow-duration="1s" data-wow-delay=".4s">
                        <i class="flaticon-nunchaku"></i>
                        <h5>Karate <span>class</span></h5>
                        <p>Num nulla sem,vulputate eu sem eu,iaculis tincidunt risus. Vestibulum tortor nibh,dapibus non nulla acer.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 p-0">
-                    <div class="service-item heads text-center mr7">
+                    <div class="service-item heads text-center mr7 wow slideInRight" data-wow-duration="1s" data-wow-delay=".4s">
                        <i class="flaticon-boxer"></i>
                        <h5>Boxing <span>class</span></h5>
                        <p>Num nulla sem,vulputate eu sem eu,iaculis tincidunt risus. Vestibulum tortor nibh,dapibus non nulla acer.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 p-0">
-                    <div class="service-item heads text-center mr7">
+                    <div class="service-item heads text-center mr7 wow slideInLeft" data-wow-duration="1s" data-wow-delay=".4s">
                        <i class="flaticon-gym-1"></i>
                        <h5>Aerobic <span>class</span></h5>
                        <p>Num nulla sem,vulputate eu sem eu,iaculis tincidunt risus. Vestibulum tortor nibh,dapibus non nulla acer.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 p-0">
-                    <div class="service-item heads text-center mr7">
+                    <div class="service-item heads text-center mr7 wow bounceInUp" data-wow-duration="1s" data-wow-delay=".4s">
                        <i class="flaticon-yoga"></i>
                        <h5>Yoga <span>class</span></h5>
                        <p>Num nulla sem,vulputate eu sem eu,iaculis tincidunt risus. Vestibulum tortor nibh,dapibus non nulla acer.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 p-0">
-                    <div class="service-item heads text-center mr7">
+                    <div class="service-item heads text-center mr7 wow slideInRight" data-wow-duration="1s" data-wow-delay=".4s">
                        <i class="flaticon-yoga-1"></i>
                        <h5>Pilates <span>class</span></h5>
                        <p>Num nulla sem,vulputate eu sem eu,iaculis tincidunt risus. Vestibulum tortor nibh,dapibus non nulla acer.</p>
@@ -229,7 +236,7 @@
             </div>
             <div class="row mx-0">
                 <div class="col-lg-4 p-0">
-                    <div class="pricing-plan text-center mr10 mr11">
+                    <div class="pricing-plan text-center mr10 mr11 wow slideInLeft" data-wow-duration="2s" data-wow-delay=".4s">
                         <div class="dollar">
                             <span>Starter plan</span>
                             <p>29.99$</p>
@@ -246,7 +253,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 p-0">
-                    <div class="pricing-plan text-center mr15 mr16">
+                    <div class="pricing-plan text-center mr15 mr16 wow pulse" data-wow-duration="2s" data-wow-delay=".4s">
                         <div class="dollar mr9">
                             <span>Advance plan</span>
                             <p>59.99$</p>
@@ -263,7 +270,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 p-0">
-                    <div class="pricing-plan text-center mr10 mr13">
+                    <div class="pricing-plan text-center mr10 mr13 wow slideInRight" data-wow-duration="2s" data-wow-delay=".4s">
                         <div class="dollar">
                             <span>Professional plan</span>
                             <p>89.99$</p>
@@ -298,7 +305,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="xs-team">
+                    <div class="xs-team wow flipInY" data-wow-duration="1.2s" data-wow-delay=".6s">
                         <div class="team-img">
                             <figure class="imghvr-push-down">
                                 <img src="images/team-1.jpg" alt="" class="img-fluid w-100">
@@ -318,7 +325,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="xs-team">
+                    <div class="xs-team wow flipInY" data-wow-duration="1.2s" data-wow-delay=".6s">
                         <div class="team-img">
                             <figure class="imghvr-push-down">
                                 <img src="images/team-2.jpg" alt="" class="img-fluid w-100">
@@ -338,7 +345,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="xs-team">
+                    <div class="xs-team wow flipInY" data-wow-duration="1.2s" data-wow-delay=".6s">
                         <div class="team-img">
                             <figure class="imghvr-push-down">
                                 <img src="images/team-3.jpg" alt="" class="img-fluid w-100">
@@ -358,7 +365,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="xs-team">
+                    <div class="xs-team wow flipInY" data-wow-duration="1.2s" data-wow-delay=".6s">
                         <div class="team-img">
                             <figure class="imghvr-push-down">
                                 <img src="images/team-4.jpg" alt="" class="img-fluid w-100">
@@ -396,7 +403,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="gallery-img">
+                    <div class="gallery-img wow slideInLeft" data-wow-duration="1s" data-wow-delay=".4s">
                         <img src="images/p1.jpg" alt="" class="img-fluid w-100">
                         <div class="over-lay">
                            <a class="venobox" data-gall="gallery01" href="images/p1.jpg"><i class="fas fa-search-plus"></i></a> 
@@ -404,7 +411,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="gallery-img">
+                    <div class="gallery-img wow bounceInDown" data-wow-duration="1s" data-wow-delay=".4s">
                         <img src="images/p2.jpg" alt="" class="img-fluid w-100">
                         <div class="over-lay">
                            <a class="venobox" data-gall="gallery01" href="images/p2.jpg"><i class="fas fa-search-plus"></i></a> 
@@ -412,7 +419,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="gallery-img">
+                    <div class="gallery-img wow slideInRight" data-wow-duration="1s" data-wow-delay=".4s">
                         <img src="images/p3.jpg" alt="" class="img-fluid w-100">
                         <div class="over-lay">
                            <a class="venobox" data-gall="gallery01" href="images/p3.jpg"><i class="fas fa-search-plus"></i></a> 
@@ -420,7 +427,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="gallery-img mr17">
+                    <div class="gallery-img mr17 wow slideInLeft" data-wow-duration="1s" data-wow-delay=".4s">
                         <img src="images/p4.jpg" alt="" class="img-fluid w-100">
                         <div class="over-lay">
                            <a class="venobox" data-gall="gallery01" href="images/p4.jpg"><i class="fas fa-search-plus"></i></a> 
@@ -428,7 +435,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="gallery-img mr17">
+                    <div class="gallery-img mr17 wow bounceInUp" data-wow-duration="1s" data-wow-delay=".4s">
                         <img src="images/p5.jpg" alt="" class="img-fluid w-100">
                         <div class="over-lay">
                            <a class="venobox" data-gall="gallery01" href="images/p5.jpg"><i class="fas fa-search-plus"></i></a> 
@@ -436,7 +443,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="gallery-img mr17">
+                    <div class="gallery-img mr17 wow slideInRight" data-wow-duration="1s" data-wow-delay=".4s">
                         <img src="images/p6.jpg" alt="" class="img-fluid w-100">
                         <div class="over-lay">
                            <a class="venobox" data-gall="gallery01" href="images/p6.jpg"><i class="fas fa-search-plus"></i></a> 
@@ -462,7 +469,7 @@
             </div>
             <div class="row testi-slider">
                 <div class="col-lg-6">
-                    <div class="testimonial-item text-center">
+                    <div class="testimonial-item text-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">
                         <div class="testi-img">
                             <img src="images/testi1.png" alt="" class="img-fluid">
                         </div>
@@ -474,7 +481,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="testimonial-item text-center">
+                    <div class="testimonial-item text-center wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
                         <div class="testi-img">
                             <img src="images/testi2.png" alt="" class="img-fluid">
                         </div>
@@ -526,7 +533,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu text-center">
+            <div class="menu text-center wow fadeInDown" data-wow-duration="1s" data-wow-delay=".4s">
                 <ul>
                     <li data-filter="all" class="mr22 active">Monday</li>
                     <li data-filter=".tues">Tuesday</li>
@@ -539,52 +546,52 @@
             <div class="clr"></div>
             
             <div class="mix_item">
-                <div class="mix_text mix tues sat text-center mr24">
+                <div class="mix_text mix tues sat text-center mr24 wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">
                     <h6>Yoga</h6>
                     <img src="images/buddhist-yoga-pose.png" alt="">
                     <p>09:00 a.m - 11:00 a.m.</p>
                 </div>
-                <div class="mix_text mix wed text-center mr24">
+                <div class="mix_text mix wed text-center mr24 wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">
                     <h6>Skipping</h6>
                     <img src="images/man-jumping-rope.png" alt="">
                     <p>11:00 a.m - 01:00 p.m.</p>
                 </div>
-                <div class="mix_text mix tues sat text-center mr24">
+                <div class="mix_text mix tues sat text-center mr24 wow fadeInDown" data-wow-duration="1s" data-wow-delay=".4s">
                     <h6>Cycling</h6>
                     <img src="images/exercise.png" alt="">
                     <p>01:00 p.m - 03:00 p.m.</p>
                 </div>
-                <div class="mix_text mix wed thur text-center mr24">
+                <div class="mix_text mix wed thur text-center mr24 wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
                     <h6>Boxing</h6>
                     <img src="images/boxing-fighter.png" alt="">
                     <p>03:00 p.m - 05:00 p.m.</p>
                 </div>
-                <div class="mix_text mix thur text-center mr24">
+                <div class="mix_text mix thur text-center mr24 wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
                     <h6>Back Relief</h6>
                     <img src="images/man-exercising-back-and-legs.png" alt="">
                     <p>05:00 p.m - 07:00 p.m.</p>
                 </div>
-                <div class="mix_text mix thur text-center">
+                <div class="mix_text mix thur text-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">
                     <h6>Chin Up</h6>
                     <img src="images/pull-up.png" alt="">
                     <p>09:00 p.m - 11:00 p.m.</p>
                 </div>
-                <div class="mix_text mix fri text-center">
+                <div class="mix_text mix fri text-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">
                     <h6>Weight Lifting</h6>
                     <img src="images/weightlifting.png" alt="">
                     <p>11:00 p.m - 01:00 a.m.</p>
                 </div>
-                <div class="mix_text mix fri sat text-center">
+                <div class="mix_text mix fri sat text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                     <h6>Weight Losing</h6>
                     <img src="images/yoga.png" alt="">
                     <p>01:00 a.m - 03:00 a.m.</p>
                 </div>
-                <div class="mix_text mix fri text-center">
+                <div class="mix_text mix fri text-center wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
                     <h6>Free Hand</h6>
                     <img src="images/exercise%20(2).png" alt="">
                     <p>03:00 a.m - 05:00 a.m.</p>
                 </div>
-                <div class="mix_text mix sat text-center">
+                <div class="mix_text mix sat text-center wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
                     <h6>Dumbell</h6>
                     <img src="images/exercise%20(1).png" alt="">
                     <p>05:00 a.m - 07:00 a.m.</p>
@@ -647,20 +654,20 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title-center">
-                        <div class="head heads">
+                        <div class="head heads wow slideInDown" data-wow-duration="1s" data-wow-delay=".4s">
                             <span>08</span>
                             <p>Clever line here</p>
                             <h2>Contact</h2>
                         </div>
                     </div>
-                    <div class="title-para">
+                    <div class="title-para wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi recusandae, et voluptas ratione sunt, dignissimos iste eum quia dicta! Deserunt.</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="forms">
+                    <div class="forms wow lightSpeedIn" data-wow-duration="1s" data-wow-delay=".4s">
                         <form action="index.html" method="post">
                             <div class="row">
                                 <div class="col-lg-6">
@@ -726,11 +733,21 @@
     </section>
     <!--Footer Part End-->
     
+    <!-- Back to top Part Start-->
+    <section>
+      <a href="#" class="back-to-top">
+        <i class="fas fa-dumbbell"></i>
+      </a>  
+    </section>
+    <!-- Back to top Part End-->
+    
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/mixitup.min.js"></script>
     <script src="js/jquery.ripples.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
     <script src="js/venobox.min.js"></script>
     <script src="js/custom.js"></script>
     <script>
