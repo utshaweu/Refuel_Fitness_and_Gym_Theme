@@ -3,7 +3,7 @@ $(function(){
     
     //Preloader Part js
     $(window).on('load', function(){
-       $(".preloader").delay(1000).fadeOut(500); 
+       $(".preloader").delay(500).fadeOut(500); 
     });
     
     //Sticky Menu js
