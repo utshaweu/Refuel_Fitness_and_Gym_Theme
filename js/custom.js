@@ -1,6 +1,11 @@
 $(function(){
    'use strict';
     
+    //Preloader Part js
+    $(window).on('load', function(){
+       $(".preloader").delay(1000).fadeOut(500); 
+    });
+    
     //Sticky Menu js
     $(window).scroll(function(){
        var scrolling = $(this).scrollTop();
